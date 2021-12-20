@@ -7,6 +7,7 @@ using MongoDB.Driver;
 
 namespace Catalog.Repositories
 {
+// docker run -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=Pass#word1 mongo
     public class MongoDBItemsRepository : IItemsRepository
     {
         private const string databaseName = "catalog";
